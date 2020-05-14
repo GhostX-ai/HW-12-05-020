@@ -25,6 +25,8 @@ namespace HW12_05_2020
             res = func == "+" ? x + y : func == "-" ? x - y : func == "*" ? x * y : func == "/" ? x / y : 0;
             Console.WriteLine(clear);
             Console.WriteLine(res);
+            string camelCase = "camelCase";
+            camelCase = String.Join("", camelCase.ToCharArray().Select(p => char.IsUpper(p) == true ? " " + p.ToString().ToLower() : p.ToString()));
             Console.ReadKey();
         }
     }
